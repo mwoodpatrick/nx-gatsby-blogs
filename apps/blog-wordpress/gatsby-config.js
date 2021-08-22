@@ -22,6 +22,10 @@ module.exports = {
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
         url: `${process.env.WORDPRESS_SITE_URL}/graphql`,
+        // workaround for https://github.com/gatsbyjs/gatsby/issues/29966
+        type: {
+          BlockEditorContentNode: { exclude: true },
+        },
       },
     },
     `gatsby-plugin-material-ui`,
