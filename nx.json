@@ -40,6 +40,13 @@
       "tags": [],
       "implicitDependencies": ["blog-wordpress"]
     },
+    "nextjs-wp-frontend": {
+      "tags": []
+    },
+    "nextjs-wp-frontend-e2e": {
+      "tags": [],
+      "implicitDependencies": ["nextjs-wp-frontend"]
+    },
     "ui": {
       "tags": []
     }
